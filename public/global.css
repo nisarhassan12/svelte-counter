@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media(max-width: 700px) {
+	html {
+		font-size: 52.5%;
+	}
+}
+
+@media(max-width: 500px) {
+	html {
+		font-size: 45.5%;
+	}
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;;
+	font-size: 2.1rem;
+	font-family: 'Arvo', sans-serif;
+	background: linear-gradient(rgba(2, 54, 63, 0.932), rgba(8, 125, 146, 0.4)), url('./bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+h1 {
+	display: flex;
+	justify-content: space-between;
+	font-size: 8rem;
+	margin-bottom: 4rem;
+}
+
+button {
+	display: inline-block;
+	padding: 1.5rem 5rem;
+	background: none;
+	font: inherit;
+	color: inherit;
+	border: 1px solid;
+	border-radius: 10rem;
+	background: rgba(255, 255, 255, .05);
+	transition: all .2s;
+}
+
+button:hover,
+button:focus {
+	transform: translateY(-2px);
+	background: rgba(255, 255, 255, .15);
+}
+
+::-moz-focus-inner {
+	border: none;
+}
+
+button:active {
+	transform: translateY(1px);
+}
+
+button:not(:last-of-type) {
+	margin-right: 1rem;
+}
+
+span {
+	display: inline-block;
+	transition: all .2s;
+}
+
+span:first-of-type {
+	margin-left: -2rem;
+}
+
+span.ml-4 {
+	margin-left: -4.5rem;
+}
+
+span:last-of-type {
+	width: 50px;
+}

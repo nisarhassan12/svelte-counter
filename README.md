@@ -1,1 +1,1 @@
-# svelte-counter
+# Svelter Counter
